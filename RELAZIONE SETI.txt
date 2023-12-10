@@ -1,0 +1,84 @@
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO/microbash-students $ cd ..
+
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ ls
+ B5.zip   B6   B6.zip  'b$.zip'   file_director.c   microbash-students
+
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ ls | cd microbash-students/
+BEZÛGO! Il comando cd va usato una sola volta e come unico comando
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ cd foo
+BELIN BELANDI, ADESCITE: No such file or directory
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ ls -l | grep foo >bar
+Anâ cómme 'na lìppa:
+The child terminated normally and the exit-status is 1 while the pid number is 894
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ ls -l | grep micro >bar
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ cat bar
+drwxrwxrwx 1 root root   4096 Nov 27 18:29 microbash-students
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ cat /proc/cpuinfo | grep processor | wc -l
+8
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ cat </proc/cpuinfo | grep processor | wc -l
+8
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ cd foo <bar
+BEZÛGO! Cd può avere un solo argomento e non può avere redirezioni I/O
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ ls | cd foo 
+BEZÛGO! Il comando cd va usato una sola volta e come unico comando
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ ls -l | grep foo > bar
+Parsing error: no path specified for output redirection
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ ls -l | grep foo < bar
+Sciûsciâ e sciorbî no se pêu: Non è possibile redirigere comandi che non siano il primo o l'ultimo
+
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ cd microbash-students | ls
+BEZÛGO! Cd può avere un solo argomento e non può avere redirezioni I/O
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ cd microbash-students  cd microbash-students  <bar
+BEZÛGO! Cd può avere un solo argomento e non può avere redirezioni I/O
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ cd microbash  <bar
+BEZÛGO! Cd può avere un solo argomento e non può avere redirezioni I/O
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ cat bar
+drwxrwxrwx 1 root root   4096 Nov 27 18:29 microbash-students
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ ls -l
+total 1316
+-rwxrwxrwx 1 root root 336851 Nov 26 20:29  B5.zip
+drwxrwxrwx 1 root root   4096 Nov 27 18:19  B6
+-rwxrwxrwx 1 root root 334711 Nov 27 17:50  B6.zip
+-rwxrwxrwx 1 root root 669656 Nov 21 17:42 'b$.zip'
+-rwxrwxrwx 1 root root     62 Nov 29 16:30  bar
+-rwxrwxrwx 1 root root    394 Oct 13 10:37  file_director.c
+drwxrwxrwx 1 root root   4096 Nov 27 18:29  microbash-students
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO $ ls | grep foo <bar | wc -l
+Sciûsciâ e sciorbî no se pêu: Non è possibile redirigere comandi che non siano il primo o l'ultimo
+
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO/microbash-students $ ls <prova
+Makefile  bar  microbash  microbash.c  microbash.o  microbash.pdf  pippo  prova  relazione.txt
+/mnt/c/Users/passa/Desktop/scuola/UNIVERSITÁ/2 ANNO/SETI/LAGORIO/microbash-students $ cat prova
+Makefile
+microbash
+microbash.c
+microbash.o
+microbash.pdf
+prova
+relazione.txt
+wxr-xr-x 1 S5428470 LaboDidattici  57792 Nov 27 17:43 microbash
+-rw-r--r-- 1 S5428470 LaboDidattici  13669 Nov 27 17:43 microbash.c
+-rw-r--r-- 1 S5428470 LaboDidattici  62344 Nov 27 17:43 microbash.o
+-rw-r--r-- 1 S5428470 LaboDidattici 298886 Nov 11 10:58 microbash.pdf
+-rw------- 1 S5428470 LaboDidattici     77 Nov 27 17:44 prova
+-rw-r--r-- 1 S5428470 LaboDidattici  18461 Nov 26 11:00 relazione.txt
+
+
